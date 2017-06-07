@@ -1,0 +1,158 @@
+/*=============================== Initial Style Start =========================================*/
+
+blockquote,
+body,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+    font-Style: normal;
+    font-weight: 400
+}
+
+li {
+    list-Style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    *font-size: 100%;
+    font-weight: inherit
+}
+
+legend {
+    color: #333
+}
+
+html {
+    background-color: #fff;
+}
+
+body {
+    font: 400 14px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", tahoma, sans-serif;
+    color: #666;
+    background-color: #fff
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #2bb8aa;
+    text-decoration: underline
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Hiragino Sans GB", " Microsoft YaHei", "WenQuanYi Micro Hei", arial, sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased
+}
+
+input[type=password] {
+    font-family: arial, sans-serif
+}
+
+@font-face {
+    font-family: global-iconfont;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../font/global-iconfont.ttf');
+    /*src: url(/bs/file/?f=fewww:iconfont/css/fonts/global-iconfont.eot) format("embedded-opentype"), url(/bs/file/?f=fewww:iconfont/css/fonts/global-iconfont.woff2@45a0484) format("woff2"), url(/bs/file/?f=fewww:iconfont/css/fonts/global-iconfont.woff@45a0484) format("woff"), url(/bs/file/?f=fewww:iconfont/css/fonts/global-iconfont.ttf@45a0484) format("truetype"), url(/bs/file/?f=fewww:iconfont/css/fonts/global-iconfont.svg@45a0484) format("svg")*/
+}
+
+
+/*================================ Initial Style End =========================================*/
+
+
+/*=============================== Common Style Start =========================================*/
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/*================================ Common Style End ==========================================*/

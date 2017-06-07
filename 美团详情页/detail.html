@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美团详情页</title>
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="./static/css/detail.css">
+</head>
+
+<body>
+    <header class="mg-topbar"></header>
+    <div class="mg-container">
+        <div class="bread-nav link-black">
+            <a href="#">北京团购</a>
+            <span>»</span>
+            <a href="#">美食团购</a>
+            <span>»</span>
+            <a href="#">甜点饮品</a>
+            <span>»</span> 三元梅园
+        </div>
+        <div class="mg-info clearfix">
+            <div class="title">
+                <div class="maintitle">
+                    <span>【3店通用】</span>
+                    <h1>三元梅园</h1>
+                </div>
+                <div class="subtitle">仅售13.8元！最高价值17元的套餐2选1，可免费使用包间，提供免费WiFi。</div>
+            </div>
+            <div class="info-cont">
+                <div class="info-left fl">
+                    <div class="mainpic">
+                        <span class="mark"><span class="mark-item item1"></span><span class="mark-item item2"></span></span><img src="./static/images/detail/product_pic.jpg" alt="">
+                    </div>
+                    <div class="smallpic">
+                        <img src="./static/images/detail/small-product.jpg" alt="">
+                    </div>
+                </div>
+                <div class="info-right fl">
+                    <div class="info-price clearfix">
+                        <span class="price-title">团购价</span>
+                        <span class="price-price"><span>￥</span><i>13.8</i></span>
+                        <span class="price-origin"><span>门店价</span><del>￥17</del></span>
+                    </div>
+                    <div class="info-rating">
+                        <span class="rating-soled">已售<span class="emp">7748</span></span>
+                        <span class="rating-rate"><span class="emp">3.9</span>分</span>
+                        <span class="rating-comm"><span class="emp">1760</span>人评价</span>
+                    </div>
+                    <div class="info-time clearfix">
+                        <span class="info-captain">有效期</span><span class="info-detail"><span>截止到2017.04.03</span><span class="info-emp">周末、法定节假日通用</span></span>
+                    </div>
+                    <div class="info-kind">
+                        <span id="info-captain" class="info-captain">套餐</span><span>
+                            <a href="javascritp:;" class="info-kind-btn btn-active">1人餐13.8元</a>
+                            <a href="javascritp:;" class="info-kind-btn">2人餐28.8元</a>
+                        </span>
+                    </div>
+                    <div class="info-buy">
+                        <div class="quantity"><span class="info-captain">数量</span>
+                            <button id="dec" class="quantity-btn">-</button><input id="qty" class="quantity-ipt" type="text" value="1"><button id="inc" class="quantity-btn">+</button></div>
+                        <div class="info-buy-submit">
+                            <input class="info-buy-btn" type="submit">
+                            <a href="" class="buy-fav">收藏<strong>(1571)</strong></a><a href="" class="buy-share">分享</a>
+                        </div>
+                    </div>
+                    <div class="info-service">
+                        <span class="info-captain">服务承诺</span><span class="info-detail">
+                            <a class="service-label" href="#"><i class="icon icon-1"></i> 随时退</a>
+                            <a class="service-label" href="#"><i class="icon icon-2"></i> 过期退</a>
+                            <a class="service-label" href="#"><i class="icon icon-3"></i> 极速退</a>
+                            <span class="service-label" href="#"><i class="icon icon-4"></i> 真实评价</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mg-container-wrap">
+            <div class="mg-more">
+                <div class="more-tips clearfix">
+                    <div class="more-tips-wrap">
+                        <p>亲爱的用户，本次团购有效期延长至2017年04月03日，感谢您的支持，祝消费愉快~</p>
+                    </div>
+                </div>
+                <div class="more-other">
+                    <h3 class="title-h3">
+                        该商家的其他团购
+                        <div class="subtitle-h3">
+                            <span class="right">已售</span>
+                            <span class="middle">门店价</span>
+                            <span class="left">团购价</span>
+                        </div>
+                    </h3>
+                    <ul>
+                        <li class="more-list">
+                            <a href="#">
+                                <span class="title">【3店通用】双人餐，包间免费，提供免费WiFi</span>
+                                <span class="price">￥28.8</span>
+                                <span class="origin-price">¥40 </span>
+                                <span class="soled">2286</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mg-floatbar" class="mg-floatbar">
+                <ul id="floatbar">
+                    <li id="fb-location" class="cur"><a href="javascript:;">商家位置</a></li>
+                    <li id="fb-notice"><a href="javascript:;">购买须知</a></li>
+                    <li id="fb-detail"><a href="javascript:;">本单详情</a></li>
+                    <li id="fb-shop"><a href="javascript:;">商家介绍</a></li>
+                    <li id="fb-comt"><a href="javascript:;">消费评价<small>(1760)</small></a></li>
+                    <div class="mg-floatbar-btn"><a href="javascript:;">抢购</a></div>
+                </ul>
+            </div>
+            <div class="mg-location">
+                <h3 class="title-h3">商家位置</h3>
+                <div class="location-wrap">
+                    <div class="location-map"><img class="fl" src="./static/images/detail/map.png" style="width: 385px;" alt="地图位置"></div>
+                    <div class="location-addr">
+                        <ul id="shop-location" class="fl">
+                            <li>
+                                <a class="title">三元梅园（凯德mall大峡谷店）<i class="icon"></i></a>
+                                <div class="desc show">
+                                    地址：丰台区南三环西路16号凯德mall.大峡谷4层
+                                </div>
+                            </li>
+                            <li>
+                                <a class="title">三元梅园（新中关购物中心店）<i class="icon"></i></a>
+                                <div class="desc">
+                                    地址：海淀区中关村大街19号新中关购物中心4楼（近丹棱街）
+                                </div>
+                            </li>
+                            <li>
+                                <a class="title">三元梅园（朝阳大悦城店）<i class="icon"></i></a>
+                                <div class="desc">
+                                    地址：朝阳区朝阳北路101号朝阳大悦城6层（青年路口）
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mg-notice">
+                <h3 class="title-h3">购买须知</h3>
+                <dl class="clearfix"><dt>有效期</dt>
+                    <dd>2015.4.14 至 2017.4.3（周末、法定节假日通用）</dd><dt>使用时间</dt>
+                    <dd>美团券24小时可用</dd><dt>预约提醒</dt>
+                    <dd>无需预约，消费高峰时可能需要等位</dd><dt>限购限用提醒</dt>
+                    <dd>每张美团券建议1人使用</dd><dt>包间</dt>
+                    <dd>可免费使用包间</dd><dt>堂食外带</dt>
+                    <dd>堂食外带均可，可以打包，打包费详情咨询商家</dd><dt>温馨提示</dt>
+                    <dd>团购用户不可同时享受商家其他优惠</dd><dt>商家服务</dt>
+                    <dd>提供免费WiFi</dd>
+                </dl>
+            </div>
+            <div class="mg-detail">
+                <h3 class="title-h3">本单详情</h3>
+                <div class="detail-content">团购内容介绍</div>
+            </div>
+            <div class="mg-shop">
+                <h3 class="title-h3">商家介绍</h3>
+                <div class="detail-shop">
+                    <div class="title-label">三元梅园</div>
+                    <p>宫廷奶品系御膳珍品，已有数百年历史，盛行清代，后传入民间，濒临失传。后经御膳房传人左老先生指导，三元梅园挖掘、整理了数十种宫廷秘方，使这一美味珍馐得以流传至今。</p>
+                </div>
+            </div>
+        </div>
+        <div class="mg-comment">
+            <h3 class="title-h3">消费评价</h3>
+            <div class="count-wrap clearfix">
+                <div class="total">
+                    <div class="score"><span>3.9</span>分</div>
+                    <div class="comt-star"><span class="star-bg star-lg-bg"><span class="star-cover star-lg-cover star4"></span></span>
+                    </div>
+                    <div class="comt-count">共 <span>1761</span> 人评价</div>
+                </div>
+                <div class="count">
+                    <div class="percent-wrap">
+                        <div class="percent"><span class="percent-num">1分</span><span class="percent-bg"><span class="percent-cover"></span></span>41人</div>
+                        <div class="percent"><span class="percent-num">2分</span><span class="percent-bg"><span class="percent-cover"></span></span>144人</div>
+                        <div class="percent"><span class="percent-num">3分</span><span class="percent-bg"><span class="percent-cover"></span></span>364人</div>
+                        <div class="percent"><span class="percent-num">4分</span><span class="percent-bg"><span class="percent-cover"></span></span>477人</div>
+                        <div class="percent"><span class="percent-num">5分</span><span class="percent-bg"><span class="percent-cover"></span></span>735人</div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-wrap">
+                <ul class="filter-nav clearfix">
+                    <li class="cur"><a href="javascript:;">全部</a></li>
+                    <li><a href="javascript:;">晒图评价</a></li>
+                    <li><a href="javascript:;">只看低分</a></li>
+                    <li class="fr">
+                        <div class="filter-sel"><select name="sorttype" id="filter-selector">
+                            <option value="default">默认排序</option>
+                            <option value="time">时间排序</option>
+                        </select></div>
+                    </li>
+                </ul>
+                <div class="content">
+                    <ul class="comt-ul">
+                        <li>
+                            <div class="user-info fl">
+                                <div class="avator"><img src="./static/images/detail/avator.png" alt="头像"></div>
+                                <div class="user"><span class="name">gbz290788269</span><span><i class="level level2"></i></span></div>
+                            </div>
+                            <div class="comt-cont-wrap fl">
+                                <div class="info">
+                                    <span class="star-bg star-sm-bg"><span class="star-cover star-sm-cover star3"></span></span>
+                                    <span class="time">2017-02-18</span>
+                                </div>
+                                <div class="comt-cont">
+                                    <p>还不错啦 但是没有想象中好吃哦 有点稀</p>
+                                    <div class="pic">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;"><img src="./static/images/detail/comment1-1.jpg" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shopname">三元梅园（朝阳大悦城店）</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="user-info fl">
+                                <div class="avator"><img src="./static/images/detail/avator.png" alt="头像"></div>
+                                <div class="user"><span class="name">gbz290788269</span><span><i class="level level2"></i></span></div>
+                            </div>
+                            <div class="comt-cont-wrap fl">
+                                <div class="info">
+                                    <span class="star-bg star-sm-bg"><span class="star-cover star-sm-cover star3"></span></span>
+                                    <span class="time">2017-02-18</span>
+                                </div>
+                                <div class="comt-cont">
+                                    <p>还不错啦 但是没有想象中好吃哦 有点稀</p>
+                                    <div class="pic">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;"><img src="./static/images/detail/comment1-1.jpg" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shopname">三元梅园（朝阳大悦城店）</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="user-info fl">
+                                <div class="avator"><img src="./static/images/detail/avator.png" alt="头像"></div>
+                                <div class="user"><span class="name">gbz290788269</span><span><i class="level level2"></i></span></div>
+                            </div>
+                            <div class="comt-cont-wrap fl">
+                                <div class="info">
+                                    <span class="star-bg star-sm-bg"><span class="star-cover star-sm-cover star3"></span></span>
+                                    <span class="time">2017-02-18</span>
+                                </div>
+                                <div class="comt-cont">
+                                    <p>还不错啦 但是没有想象中好吃哦 有点稀</p>
+                                    <div class="pic">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;"><img src="./static/images/detail/comment1-1.jpg" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shopname">三元梅园（朝阳大悦城店）</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="user-info fl">
+                                <div class="avator"><img src="./static/images/detail/avator.png" alt="头像"></div>
+                                <div class="user"><span class="name">gbz290788269</span><span><i class="level level2"></i></span></div>
+                            </div>
+                            <div class="comt-cont-wrap fl">
+                                <div class="info">
+                                    <span class="star-bg star-sm-bg"><span class="star-cover star-sm-cover star3"></span></span>
+                                    <span class="time">2017-02-18</span>
+                                </div>
+                                <div class="comt-cont">
+                                    <p>还不错啦 但是没有想象中好吃哦 有点稀</p>
+                                    <div class="pic">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;"><img src="./static/images/detail/comment1-1.jpg" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shopname">三元梅园（朝阳大悦城店）</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pagenav">
+                        <li class="first"><span>首页</span></li>
+                        <li class="pre disable"><span><i></i>上一页</span></li>
+                        <li class="num cur"><span>1</span></li>
+                        <li class="num"><a href="javascript:;">2</a></li>
+                        <li class="num"><a href="javascript:;">3</a></li>
+                        <li class="next"><a href="javascript:;">下一页<i></i></a></li>
+                        <li class="last"><a href="javascript:;">尾页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mg-buy">
+            <div class="buy-wrap clearfix">
+                <div class="price">
+                    ￥<strong>13.8</strong>
+                </div>
+                <div class="btn">
+                    <a href="javascript:;">抢购</a>
+                </div>
+                <ul class="info">
+                    <li>门店价<br><del>￥17</del></li>
+                    <li>已售<br><span>7793</span></li>
+                </ul>
+            </div>
+            <a href="javascript:;">
+                <img src="./static/images/detail/adv.png" alt="">
+            </a>
+        </div>
+    </div>
+    <footer class="mg-footer"></footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./src/js/detail.js"></script>
+</body>
+
+</html>
